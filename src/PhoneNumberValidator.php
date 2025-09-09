@@ -10,6 +10,7 @@
         public static function isValid(string $phoneNumber) : bool
         {
             $pattern = '/^(07[012456789]\d{7}|2567[012456789]\d{7}|\+2567[012456789]\d{7})$/';
+
             return (bool) preg_match( $pattern , $phoneNumber );
         }
 
