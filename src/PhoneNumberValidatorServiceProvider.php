@@ -19,7 +19,7 @@ class PhoneNumberValidatorServiceProvider extends PackageServiceProvider
             ->name('laravel-phone-number-validator')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_laravel_phone_number_validator_table')
+//            ->hasMigration('create_laravel_phone_number_validator_table')
             ->hasCommand(PhoneNumberValidatorCommand::class);
     }
 }
