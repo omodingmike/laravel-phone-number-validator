@@ -3,8 +3,8 @@
 namespace OmodingMike\PhoneNumberValidator\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use OmodingMike\PhoneNumberValidator\PhoneNumberValidatorServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

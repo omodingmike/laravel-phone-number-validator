@@ -1,11 +1,11 @@
 <?php
 
-    namespace OmodingMike\PhoneNumberValidator\Exceptions;
+namespace OmodingMike\PhoneNumberValidator\Exceptions;
 
-    class InvalidFormatException extends \Exception
+class InvalidFormatException extends \Exception
+{
+    public function __construct(public string $format)
     {
-        public function __construct(public string $format)
-        {
-            parent::__construct( "Invalid format: {$format}" );
-        }
+        parent::__construct("Invalid format: {$format}");
     }
+}
