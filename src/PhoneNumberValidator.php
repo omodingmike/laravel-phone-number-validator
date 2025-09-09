@@ -23,7 +23,6 @@
                 throw new InvalidPhoneNumberException( $phoneNumber );
             }
 
-            // Normalize the number to +2567XXXXXXXX
             if ( str_starts_with( $phoneNumber , '0' ) ) {
                 $normalized = '+256' . substr( $phoneNumber , 1 ); // 0702345672 -> +256702345672
             }
@@ -34,11 +33,9 @@
                 $normalized = '+' . $phoneNumber;
             }
             else {
-                // fallback: keep unchanged (should not happen if isValid is correct)
                 $normalized = $phoneNumber;
             }
 
-            // Extract local part (7XXXXXXXX)
             $localPart = substr( $normalized , 4 );
 
             $area   = substr( $localPart , 0 , 3 ); // 702
