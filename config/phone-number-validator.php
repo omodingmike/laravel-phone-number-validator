@@ -1,2 +1,3 @@
 <?php
-    return [ 'error_message' => 'Invalid Phone Number' ];
+
+return ['error_message' => 'Invalid Phone Number'];
